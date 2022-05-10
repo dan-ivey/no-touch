@@ -1,4 +1,4 @@
-// Generated on 2022-05-05 using
+// Generated on 2022-05-10 using
 // generator-banner 1.9.7
 'use strict';
 
@@ -260,8 +260,8 @@ module.exports = function (grunt) {
                     dest: '<%= config.dist %>',
                     src: [
                         '*.{ico,png,txt,js}',
-                        'scripts/{,*/}*.json',
                         'images/{,*/}*.webp',
+                        'scripts/{,*/}*.json',
                         '{,*/}*.html',
                         'fonts/{,*/}*.*'
                     ]
