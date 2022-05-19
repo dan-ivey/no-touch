@@ -13,6 +13,8 @@ app.Animation = (function () {
         prerender: true,
         autoplay: false,
         path: './scripts/data.json'
+        assetsPath: './images/'
+
     };
 
     var anim = bodymovin.loadAnimation(animData);
