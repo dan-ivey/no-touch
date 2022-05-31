@@ -3,20 +3,16 @@ var app = app || {};
 
 app.Tracking = (function () {
 
+    var button;
+
     // --------------------------------------------------------------------------------------
-    // initialize
     function initialize() {
-        // Create the event.
+        button = myFT.$("#button-exit");
+        myFT.applyClickTag(button, 1);
+
         var event = document.createEvent('Event');
         event.initEvent('READY', true, true);
         document.dispatchEvent(event);
-
-        document.getElementById('button-exit').addEventListener('click', handleExit, false);
-    }
-
-    // --------------------------------------------------------------------------------------
-    function handleExit(e) {
-        window.open(clickTag, "_blank");
     }
 
     // --------------------------------------------------------------------------------------
@@ -24,5 +20,4 @@ app.Tracking = (function () {
     return {
         initialize:initialize
     }
-
 })();
